@@ -1,0 +1,320 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+    $(function() {
+
+        $('#show').on('click', function() {
+            $('.card-reveal').slideToggle('slow');
+        });
+
+        $('.card-reveal .close').on('click', function() {
+            $('.card-reveal').slideToggle('slow');
+        });
+    });
+</script>
+<style>
+    @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+    .card .card-image {
+        overflow: hidden;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+    
+    .card {
+        margin-top: 10px;
+        position: relative;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 4 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+    
+    .card .card-content {
+        padding: 10px;
+    }
+    
+    .card .card-content .card-title,
+    .card-reveal .card-title {
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+    
+    .container .content {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        /* Black background with transparency */
+        color: #f1f1f1;
+        width: 80%;
+        padding: 2px;
+        text-align: right;
+        margin-left: 90px;
+        padding-right: 15px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wrl8rkiz844?si=2WtOzYTJbgToSkuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="content">
+                            <h1>HTML Explained in Sinhala </h1>
+                        </div>
+                        <!--end div class content-->
+                    </div>
+                    <!--End Div embed-responsive-->
+
+                </div>
+                <!-- card image -->
+
+                <div class="card-content">
+                    <span class="card-title">HTML Explained in Sinhala </span>
+                    <p>In this video, we delve into the fascinating world of HTML (Hypertext Markup Language). Whether you're a beginner or looking to refresh your knowledg.</p>
+
+                </div>
+                <!-- card content -->
+
+            </div>
+        </div>
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CmJxIW06SPE?si=WZRcXgxwHqVKJ3e1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="content">
+                            <h1>The OSI Model</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card image -->
+                <div class="card-content">
+                    <span class="card-title">The OSI Model</span>
+                    <p>Uncover the layers of networking with our exploration of the OSI (Open Systems Interconnection) model. In this video, we break down this fundamental framework into digestible layers, from physical to application. </p>
+                </div>
+                <!-- card content -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/N6DHaAVUM5U?si=JyRf8HGiXKUKqI2D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="content">
+                            <h1>Java File Handling</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card image -->
+
+                <div class="card-content">
+                    <span class="card-title">Java File Handling</span>
+                    <p> Learn how to create, open, read, and write files, as well as manipulate directories. We'll cover essential concepts such as FileReader, FileWriter, BufferedReader, BufferedWriter, and more.</p>
+
+
+                </div>
+                <!-- card content -->
+
+            </div>
+        </div>
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IzkVNkB0F3s?si=AmbikgUwomNwUrXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="content">
+                            <h1>Introduction to Java Programming</h1>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card image -->
+
+                <div class="card-content">
+                    <span class="card-title">Introduction to Java Programming</span>
+                    <p>Java is a versatile and widely-used programming language known for its platform independence and extensive libraries. In this beginner-friendly tutorial, we'll cover the basics, including syntax, variables, data types, and control
+                        structures. </p>
+                </div>
+                <!-- card content -->
+
+            </div>
+        </div>
+    </div>
+    <!--end row-->
+
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8eWHXmqODBA?si=A1CjTAUIf2jyBjcL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="content">
+                            <h1>Introduction to Python Programming</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card image -->
+
+                <div class="card-content">
+                    <span class="card-title">Introduction to Python Programming</span>
+                    <p>Python is a versatile and beginner-friendly programming language that's used in web development, data analysis, machine learning, and more. In this comprehensive tutorial, we'll cover the fundamentals, including Python syntax, variables,
+                        data types, and control structures. </p>
+                </div>
+                <!-- card content -->
+
+            </div>
+        </div>
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/y1zJiHcoTA4?si=iQRKGzNWzUZM_c3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="content">
+                            <h1>Networking Fundamentals Explained</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card image -->
+
+                <div class="card-content">
+                    <span class="card-title">Networking Fundamentals Explained</span>
+                    <p> Networking is the backbone of modern communication, connecting devices, and enabling the flow of data across the globe. In this beginner-friendly tutorial, we'll demystify networking concepts, covering topics like IP addresses, protocols,
+                        routers, and switches. </p>
+                </div>
+                <!-- card content -->
+
+            </div>
+        </div>
+    </div>
+    <!--end row-->
+
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1STWhwLojcw?si=iGtCKTG_ZtC0rFgx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="content">
+                            <h1>Business in digital Economy</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card image -->
+
+                <div class="card-content">
+                    <span class="card-title">Business in digital Economy</span>
+                    <p>Join us on a journey into the heart of the digital economy. In this video, we explore how businesses are adapting to the rapidly evolving landscape of the digital age. Discover the significance of online presence, e-commerce, and digital
+                        marketing.
+                    </p>
+
+                </div>
+                <!-- card content -->
+
+            </div>
+        </div>
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/es__o1KjNNk?si=J424rqgh0GS_6gVf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="content">
+                            <h1>POS Systems Explained with K-Maps</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card image -->
+                <div class="card-content">
+                    <span class="card-title"> POS Systems Explained with K-Maps</span>
+                    <p>Explore the world of Point of Sale (POS) systems through the power of Karnaugh Maps (K-Maps). In this video, we delve into the functionality and optimization of POS systems, using K-Maps as a visual tool to simplify complex logic and
+                        decision-making processes. </p>
+                </div>
+                <!-- card content -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wDkW-eo5VjM?si=h04fjGztJ97JPWi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="content">
+                            <h1>Demystifying Sorting Algorithms</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card image -->
+
+                <div class="card-content">
+                    <span class="card-title">Demystifying Sorting Algorithms</span>
+                    <p>Dive into the world of sorting algorithms with our comprehensive guide. Sorting is a fundamental operation in computer science, and in this video, we'll unravel the mysteries of various sorting algorithms. </p>
+
+                </div>
+                <!-- card content -->
+
+            </div>
+        </div>
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5FXxR88AfCA?si=twGCPq3MWjJROo35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="content">
+                            <h1>Mastering C Programming</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card image -->
+
+                <div class="card-content">
+                    <span class="card-title">Mastering C Programming</span>
+                    <p>Embark on a coding journey with our "Mastering C Programming" video series. C is a powerful and versatile programming language that forms the foundation of many modern technologies. In this comprehensive tutorial.</p>
+
+                </div>
+                <!-- card content -->
+
+            </div>
+        </div>
+    </div>
+    <!--end row-->
+
+</div>
+<!--end container-->

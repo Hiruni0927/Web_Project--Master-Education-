@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Recovery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+	*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            background: radial-gradient(circle, rgba(195, 34, 113, 0.4907212885154062) 0%, rgba(253, 181, 45, 0.7540266106442577) 100%);
+        }
+
+        .container {
+            text-align: center;
+            min-width: 300px;
+            
+        }
+
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #dee10c;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .menu li a:hover {
+            color: #ff6600;
+        }
+
+        .about-section {
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 46px;
+            margin-bottom: 20px;
+            text-align: center;
+            color:red;
+            text-decoration: underline;
+            
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 28px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            align-items: center;
+            padding: 15px 10;
+           
+
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .menu li {
+                
+                margin-bottom: 10px;
+            }
+            nav{
+                display: flex;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+
+            }
+            nav ul{
+                display: flex;
+            }
+            nav ul li{
+                display: flex;
+            }
+        }
+
+  nav{
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    flex-grow: 1;
+    text-align: left;
+    color: #dee10c;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ff6600;
+}
+
+footer p{
+  background-color: black;
+  color: white;
+  text-align: center;  
+  margin-top: 75px;
+  height: 20px;
+  
+}
+
+  .lcontainer{
+      position: relative;
+      width: 300px;
+      height: 500px;
+      max-width: 300px;
+      max-height: 500px;
+      background: radial-gradient(circle, rgba(195, 34, 113, 0.4907212885154062) 0%, rgba(253, 181, 45, 0.7540266106442577) 100%);
+      border-radius: 50px 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-top: 80px;
+  }
+ 
+
+  .form{
+      position: absolute;
+      content: '';
+      background: radial-gradient(circle, rgba(195, 34, 113, 0.4907212885154062) 0%, rgba(253, 181, 45, 0.7540266106442577) 100%);
+      border-radius: 50px 10px;
+      inset: 5px;
+      padding: 50px 40px;
+      z-index: 10;
+      color: black;
+      margin-top: 80px;
+  
+  } 
+  h2{
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      color:white;
+  }
+  .input_group{
+      margin-top: 40px;
+      position:relative;
+      display:flex;
+      align-items: center;
+      justify-content: start;
+  }
+  .input_text{
+      width: 95%;
+      height: 30px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #00ccff;
+      font-size: 20px;
+      padding-left: 10px;
+      color: white;
+  
+  }
+  ::placeholder{
+      font-size: 15px;
+      color: black;
+      letter-spacing: 1px;
+  
+  }
+  .fa{
+      font-size:25px;
+  
+  }
+  #button{
+      position: relative;
+      width: 300px;
+      height: 40px;
+      transition: 1s;
+      margin-top: 80px;
+      margin-left: 500px;
+  
+  
+  }
+  
+  #button:hover{
+      color:orange;
+      background-color: antiquewhite;
+      font-weight: 600;
+  }
+  #button a{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      z-index: 10;
+      cursor: pointer;
+      font-size: 22px;
+      letter-spacing: 2px;
+      border: 1px solid #00ccff;
+      border-radius: 50px;
+      background: radial-gradient(circle, rgba(195, 34, 113, 0.4907212885154062) 0%, rgba(253, 181, 45, 0.7540266106442577) 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .me{
+      margin-top: 10px;
+      
+  }
+  .fotter1 {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .fotter1 a{
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 18px;
+      
+  }
+  
+  .fotter1 a:hover{
+      color: red;
+  }
+  
+  .fotter2 {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .fotter2 a{
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 18px;
+      
+      
+  }
+  
+  .fotter2 i{
+      font-size: 15px;
+  }
+  .fotter2 a:hover{
+      color: red;
+  }
+  
+  
+  .glowIcon {
+      text-shadow: 0 0 10px #00ccff;
+  
+  }
+
+  </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Master Education</div>
+      <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="h&c.html">Help & Contact</a></li>
+            <li><a href="privacy.html">privacy & policy </a></li>
+			<li><a href="profile.html">My Profile </a></li>
+        </ul>
+      
+  </nav>
+    <div class="container">
+      <div class="form">
+        <h2>Security Question for Change Password        </h2>
+        <div class="input_group">
+            <i class="fa fa-question"></i><pre>  </pre>
+            <input
+              type="email"
+              placeholder="   Enter Your Email Address"
+              class="input_text"
+              autocomplete="off"
+            />
+        </div>
+        <div class="input_group">
+          <i class="fa fa-question"></i><pre>  </pre>
+          <input
+            type="text"
+            placeholder="What city were you born in?"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="input_group">
+            <i class="fa fa-question"></i><pre>  </pre>
+            <input
+              type="text"
+              placeholder="What is your favorite vacation destination?"
+              class="input_text"
+              autocomplete="off"
+            />
+          </div>
+          <div class="input_group">
+            <i class="fa fa-question"></i><pre>  </pre>
+            <input
+              type="text"
+              placeholder="What is the name of your favorite sports team?"
+              class="input_text"
+              autocomplete="off"
+            />
+          </div>
+          <div class="input_group">
+            <i class="fa fa-question"></i><pre>  </pre>
+            <input
+              type="text"
+              placeholder="What is the name of your elementary school?"
+              class="input_text"
+              autocomplete="off"
+            />
+          </div>
+          <div class="input_group">
+            <i class="fa fa-question"></i><pre>  </pre>
+            <input
+              type="text"
+              placeholder="What is your mother's maiden name?"
+              class="input_text"
+              autocomplete="off"
+             
+            />
+          </div>
+        <div class="button_group" id="button">
+          <a href="change.html">Submit</a>
+        </div>
+        <footer>
+          <p>&copy; Master Education. All rights reserved.</p>
+          </footer>  
+      </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
